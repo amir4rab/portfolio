@@ -1,3 +1,10 @@
 <section id="projects">
-
+    <div class="slider">
+        <!-- <div class="dots">
+            <div class="dot" *ngFor='let pj of projectsArr; index as i' [ngClass]="i === 1 ? 'active':'-'"></div>
+        </div> -->
+        <div class="slider-inner">
+            <app-project *ngFor="let pj of projectsArr" [pData]="pj"></app-project>
+        </div>
+    </div>
 </section>

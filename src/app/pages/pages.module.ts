@@ -5,6 +5,7 @@ import { ContactPageComponent } from './contact-page/contact-page.component';
 import { ProjectsPageComponent } from './projects-page/projects-page.component';
 import { HomeSliderComponent } from './home-page/home-slider/home-slider.component';
 import { CommonModule } from '@angular/common';
+import { ProjectComponent } from './projects-page/project/project.component';
 
 @NgModule({
     declarations:[
@@ -13,6 +14,7 @@ import { CommonModule } from '@angular/common';
         ContactPageComponent,
         ProjectsPageComponent,
         HomeSliderComponent,
+        ProjectComponent,
     ],
     imports: [
         CommonModule

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { GlobalDataService } from './global-data/global-data.service';
 
 @Component({
   selector: 'app-root',
@@ -7,41 +8,33 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'portfolio';
-  options = {
-    // root: document.querySelector('body'),
-    rootMargin: '0px',
-    threshold: 1.0
-  }
   target: HTMLElement = null;
-  constructor (  ) {
-    this.doStuff(this.ob);
+  constructor ( private globalD: GlobalDataService  ) {
+    // this.doStuff(this.ob);
   }
-  doStuff(fn){
-    setTimeout(fn, 1);
-  }
-  ob(){
-    let targetEl;
-    targetEl = document.getElementById('home');
 
-    const callback = (entries, observer): void => {
-      entries.forEach(entry => {
-        // Each entry describes an intersection change for one observed
-        // target element:
-        //   entry.boundingClientRect
-        //   entry.intersectionRatio
-        //   entry.intersectionRect
-        //   entry.isIntersecting
-        //   entry.rootBounds
-        //   entry.target
-        //   entry.time
+  pArr = this.globalD.projectsArr;
 
-        console.log(entry);
-      });
-    }
+  // options = {
+  //   rootMargin: '0px',
+  //   threshold: 1.0
+  // }
+  // doStuff(fn){
+  //   setTimeout(fn, 1);
+  // }
+  // ob(){
+  //   let targetEl;
+  //   targetEl = document.getElementById('home');
 
-    const observer = new IntersectionObserver(callback, this.options);
-    console.log(document.getElementById('home'));
+  //   const callback = (entries, observer): void => {
+  //     entries.forEach(entry => {
+  //       console.log(entry);
+  //     });
+  //   }
 
-    observer.observe(targetEl);
-  }
+  //   const observer = new IntersectionObserver(callback, this.options);
+  //   console.log(document.getElementById('home'));
+
+  //   observer.observe(targetEl);
+  // }
 }
