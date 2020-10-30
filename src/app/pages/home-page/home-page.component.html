@@ -1,0 +1,10 @@
+<section id="home">
+    <div class="content">
+        <h1 class="title">I am a front-end developer</h1>
+        <app-home-slider *ngIf="showSlider"></app-home-slider>
+        <div class="buttons-section">
+            <button class="primary" (click)="scrollTo('projects')">My projects</button>
+            <button class="darken" (click)="scrollTo('jack')">About me</button>
+        </div>
+    </div>
+</section>

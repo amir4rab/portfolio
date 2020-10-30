@@ -1,0 +1,84 @@
+@import '../../scss/style.scss';
+
+.navbar-top {
+    position: fixed;
+    z-index: 500;
+
+    top: 0;
+    left: 0;
+    
+    width: 100%;
+
+    background: $secBg;
+
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+
+    padding: .5rem 5vw;
+
+
+    .navbar-links {
+        color: $light;
+        a {
+            color: transparentize($light, .5);
+
+            transition: color .3s ease-in-out,
+                        border .3s ease-in-out;
+
+            border-bottom: .1rem solid #00000000;
+
+            padding: .5rem 1rem;
+
+            text-decoration: none;
+
+            &.active {
+                opacity: 1;
+                font-weight: 700;
+                color: $light;
+                border-bottom: .1rem solid $light;
+                &:hover {
+                    color: $light;
+                }
+            }
+
+            // &:not(:last-child){
+            //     margin-right: .5rem;
+            // }
+
+            &:hover {
+                color: transparentize($light, .3);
+                cursor: pointer;
+            }
+        }
+    }
+    .select-section {
+        background-color: $mainBg;
+        padding: .5rem 1rem;
+        border-radius: .5rem;
+        overflow: hidden;
+        button {
+            background: transparent;
+            color: $light;
+            font-weight: 700;
+            padding: .5em 1em;
+            border-radius: .5rem;
+
+            transition: background .3s ease-in-out;
+            &:not(:last-child) {
+                margin-right: .25rem;
+            }
+            &.active {
+                background: $secBg;
+                &:hover {
+                    background: $secBg;
+                    cursor: default;
+                }
+            }
+            &:hover {
+                background: darken($secBg, 5%);
+            }
+        }
+    }
+}

@@ -1,1 +1,42 @@
+@import './scss/style.scss';
+
 /* You can add global styles to this file, and also import other style files */
+
+*,*::before,*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    width: .5vw;
+}
+::-webkit-scrollbar-track{
+    background: #555555;
+}
+::-webkit-scrollbar-thumb{
+    background: #1f1f1f;
+}
+::-webkit-scrollbar-thumb:hover, ::-webkit-scrollbar-thumb:active{
+    background: #000000;
+}
+
+
+section{
+    height: 100vh;
+    background-color: $mainBg;
+}
+
+button{
+    padding: .5em 2em;
+    border: none;
+    border-radius: .1em;
+    outline: none;
+    &:hover{
+        cursor: pointer;
+    }
+}
