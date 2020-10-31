@@ -6,13 +6,13 @@
         <div class="slider__dots">
             <div class="dot" *ngFor="let pj of projectsArr;index as i" [ngClass]="i === activeIndex ? 'active':'-'" (click)="scrollTo(i)" ></div>
         </div>
-        <div class="slider__arrows">
-            <a (click)="scrollTo(activeIndex - 1)">
-                <img src="../../../assets/icons/scroll-left.svg" alt="">
-            </a>
-            <a (click)="scrollTo(activeIndex + 1)">
-                <img src="../../../assets/icons/scroll-right.svg" alt="">
-            </a>
-        </div>
+    </div>
+    <div class="arrows">
+        <a (click)="scrollTo(activeIndex - 1)">
+            <img src="../../../assets/icons/scroll-left.svg" alt="">
+        </a>
+        <a (click)="scrollTo(activeIndex + 1)">
+            <img src="../../../assets/icons/scroll-right.svg" alt="">
+        </a>
     </div>
 </section>

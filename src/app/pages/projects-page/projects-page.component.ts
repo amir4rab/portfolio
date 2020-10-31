@@ -20,7 +20,7 @@ export class ProjectsPageComponent implements OnInit {
 
   scrollTo(index: number){
     if ( this.projectsArr.length < index + 1 || index < 0 ) return;
-    this.sliderTransform=`translateX(-${ index * 100 }vw)`;
+    this.sliderTransform=`translateX(-${ index * 80 }vw)`;
     this.activeIndex = index;
   }
 }

@@ -1,7 +1,7 @@
 @import '../../../../scss/style.scss';
 .project-section{
     height: 80vh;
-    min-width: 100vw;
+    min-width: 80vw;
     color: $light;
     display: flex;
     justify-content: center;
@@ -17,7 +17,6 @@
         height: 50%;
         width: 60%;
 
-        padding-left: 15vh;
         text-align: left;
 
         .title{
@@ -111,7 +110,8 @@
     .img{
         width: 40%;
         display: flex;
-        justify-content: center;
+        justify-content: flex-end;
+        margin-right: 2rem;
         align-items: center;
         align-content: center;
         img{

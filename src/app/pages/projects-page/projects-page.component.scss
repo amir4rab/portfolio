@@ -1,8 +1,36 @@
 @import '../../../scss/style.scss';
 
-.slider{
-    overflow: hidden;
+#projects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
+    .arrows{
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100vw;
+        padding: 0 1.5rem ;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        img{
+            height: 4rem;
+            object-fit: scale-down;
+            opacity: .75;
+            transition: opacity .3s ease-in-out;
+            &:hover{
+                opacity: 1;
+                cursor: pointer;
+            }
+        }
+    }
+}
+.slider{
+    margin: 0 auto;
+    overflow: hidden;
+    width: 80vw;
     &__inner{
         display: flex;
         justify-content: flex-start;
@@ -41,25 +69,5 @@
             }
         } 
     }
-    &__arrows{
-        position: absolute;
-        top: 50%;
-        left: 0;
-        width: 100vw;
-        padding: 0 1.5rem ;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        align-content: center;
-        img{
-            height: 4rem;
-            object-fit: scale-down;
-            opacity: .75;
-            transition: opacity .3s ease-in-out;
-            &:hover{
-                opacity: 1;
-                cursor: pointer;
-            }
-        }
-    }
+
 }
