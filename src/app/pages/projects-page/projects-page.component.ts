@@ -7,13 +7,20 @@ import { project } from './project.type';
 })
 export class ProjectsPageComponent implements OnInit {
   @Input() projectsArr: project[] = [];
-  dotsCount: number = null;
+  sliderTransform: string = "translateX(0vw)";
+  activeIndex: number = 0;
   constructor() { 
   }
 
   ngOnInit(): void {
-    console.log(this.projectsArr);
-    this.dotsCount = this.projectsArr.length;
+    // setTimeout(() => {
+    //   this.sliderTransform="translateX(-50vw)";
+    // }, 1000);
   }
 
+  scrollTo(index: number){
+    if ( this.projectsArr.length < index + 1 || index < 0 ) return;
+    this.sliderTransform=`translateX(-${ index * 100 }vw)`;
+    this.activeIndex = index;
+  }
 }

@@ -1,10 +1,18 @@
 <section id="projects">
     <div class="slider">
-        <!-- <div class="dots">
-            <div class="dot" *ngFor='let pj of projectsArr; index as i' [ngClass]="i === 1 ? 'active':'-'"></div>
-        </div> -->
-        <div class="slider-inner">
+        <div class="slider__inner" [style.transform]="sliderTransform">
             <app-project *ngFor="let pj of projectsArr" [pData]="pj"></app-project>
+        </div>
+        <div class="slider__dots">
+            <div class="dot" *ngFor="let pj of projectsArr;index as i" [ngClass]="i === activeIndex ? 'active':'-'" (click)="scrollTo(i)" ></div>
+        </div>
+        <div class="slider__arrows">
+            <a (click)="scrollTo(activeIndex - 1)">
+                <img src="../../../assets/icons/scroll-left.svg" alt="">
+            </a>
+            <a (click)="scrollTo(activeIndex + 1)">
+                <img src="../../../assets/icons/scroll-right.svg" alt="">
+            </a>
         </div>
     </div>
 </section>

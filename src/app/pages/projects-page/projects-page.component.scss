@@ -1,0 +1,65 @@
+@import '../../../scss/style.scss';
+
+.slider{
+    overflow: hidden;
+    position: relative;
+    &__inner{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        align-content: center;
+        flex-wrap: nowrap;
+        transition: all .3s ease-in-out;
+    }
+    &__dots{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        .dot{
+            width: 2.5vw;
+            height: .5rem;
+            background-color: $light;
+            border-radius: .75rem;
+            opacity: .5;
+            transition: opacity .3s ease-in-out,
+                        width .3s ease-in-out;
+            &.active{
+                width: 5vw;
+                opacity: 1;
+                &:hover{
+                    opacity: 1;
+                    cursor: default;
+                }
+            }
+            &:hover{
+                opacity: .75;
+                cursor: pointer;
+            }
+            &:not(:last-child){
+                margin-right: .5rem;
+            }
+        } 
+    }
+    &__arrows{
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100vw;
+        padding: 0 1.5rem ;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        img{
+            height: 4rem;
+            object-fit: scale-down;
+            opacity: .75;
+            transition: opacity .3s ease-in-out;
+            &:hover{
+                opacity: 1;
+                cursor: pointer;
+            }
+        }
+    }
+}

@@ -1,10 +1,7 @@
 @import '../../../../scss/style.scss';
 .project-section{
-    border: .1rem solid #ff0000;
-    z-index: 10000;
-
-    padding: 0 10vh;
-    height: 100vh;
+    height: 80vh;
+    min-width: 100vw;
     color: $light;
     display: flex;
     justify-content: center;
@@ -78,7 +75,7 @@
         .button-section{
             flex-grow: 1;
             display: flex;
-            justify-content: space-around;
+            justify-content: flex-start;
             align-items: flex-end;
             align-content: center;
             width: 50%;
@@ -104,6 +101,9 @@
                     font-size: 1rem;
                     font-weight: 700;
                     //background-color: #ff0000;
+                }
+                &:not(:last-child){
+                    margin-right: 2rem;
                 }
             }
         }
