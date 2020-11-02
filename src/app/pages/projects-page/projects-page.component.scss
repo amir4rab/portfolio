@@ -9,7 +9,7 @@
         position: absolute;
         top: 50%;
         left: 0;
-        width: 100vw;
+        width: 100%;
         padding: 0 1.5rem ;
         display: flex;
         justify-content: space-between;
@@ -18,11 +18,17 @@
         img{
             height: 4rem;
             object-fit: scale-down;
-            opacity: .75;
-            transition: opacity .3s ease-in-out;
+            opacity: .5;
+            filter: drop-shadow(0 0 .5rem transparent);
+            transition: opacity .3s ease-in-out,
+                        filter .1s ease-in-out,;
             &:hover{
-                opacity: 1;
+                opacity: .75;
                 cursor: pointer;
+            }
+            &:active{
+                opacity: 1;
+                filter: drop-shadow(0 0 .3rem $highlights);
             }
         }
     }
@@ -46,12 +52,14 @@
         align-content: center;
         .dot{
             width: 2.5vw;
-            height: .5rem;
+            height: .4rem;
             background-color: $light;
             border-radius: .75rem;
             opacity: .5;
+            filter: drop-shadow(0 0 .5rem transparent);
             transition: opacity .3s ease-in-out,
-                        width .3s ease-in-out;
+                        width .3s ease-in-out,
+                        filter .1s ease-in-out;
             &.active{
                 width: 5vw;
                 opacity: 1;
@@ -64,6 +72,12 @@
                 opacity: .75;
                 cursor: pointer;
             }
+            &:active{
+                opacity: .75;
+                opacity: 1;
+                filter: drop-shadow(0 0 .3rem $highlights);
+            }
+
             &:not(:last-child){
                 margin-right: .5rem;
             }

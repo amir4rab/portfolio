@@ -1,13 +1,15 @@
-import { Injectable } from '@angular/core';
-import { Subject } from 'rxjs';
-import { project } from '../pages/projects-page/project.type';
+import { Component, OnInit } from '@angular/core';
+import { project } from 'src/app/pages/projects-page/project.type';
+import { GlobalDataService } from '../../global-data/global-data.service'
 
-@Injectable({
-  providedIn: 'root'
+
+@Component({
+  selector: 'app-en',
+  templateUrl: './en.component.html',
+  styleUrls: ['./en.component.scss']
 })
-export class GlobalDataService {
-  observerReobserv: Subject<boolean> = new Subject;
-  projectsArr: project[] = [
+export class EnComponent implements OnInit {
+  pArr: project[] = [
     {
       title: 'news app',
       aboutShort: 'a simple news app that fetch data from api and let you save your prefrences.',
@@ -97,8 +99,10 @@ export class GlobalDataService {
       ]
     }
   ] 
-  reobserv(){
-    this.observerReobserv.next(true);
+  constructor(private globalDS: GlobalDataService) { }
+
+  ngOnInit(): void {
+    this.globalDS.reobserv();
   }
-  constructor() { }
+
 }

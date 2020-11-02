@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GlobalDataService } from '../global-data/global-data.service';
 
 @Component({
   selector: 'app-navbar-top',
@@ -6,39 +7,54 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar-top.component.scss']
 })
 export class NavbarTopComponent implements OnInit {
+  activeLink: string = null;
+  activeLang: string = null;
+  lastObservedItems :HTMLElement[] = [];
+  observer: IntersectionObserver;
 
-  constructor() { }
+  constructor(private globalDS: GlobalDataService) { }
 
   ngOnInit(): void {
-    // setTimeout(()=>this.scrollTo('#projects'), 20);
+    this.iObserver();
+
+    this.globalDS.observerReobserv.subscribe( _ => {
+      if( this.lastObservedItems.length === 0 ) {
+        this.observ();
+      } else {
+        this.rebserv();
+      }
+    });
+  }
+  iObserver(){
+    const options = {
+      root: document.querySelector('#scrollArea'),
+      rootMargin: '0px',
+      threshold: 0.5
+    }
+
+    this.observer = new IntersectionObserver(
+      (entries)=>{
+        entries.forEach(entry  => {
+          if(entry.isIntersecting){
+            this.activeLink = entry.target.id;
+          }
+      })
+    },options);
   }
 
+  observ(): void{
+    const sectionElments: NodeList = document.querySelectorAll('section');
+    for(let el of Array.from(sectionElments)){
+      this.lastObservedItems.push(el as HTMLElement);
+      this.observer.observe(el as HTMLElement);
+    }
+  }
 
-  // scrollTo(element: string): void {
-  //   function getElement(): HTMLElement{
-  //     switch(element[0]){
-  //       case '.': {
-  //         return document.querySelector(element);
-  //         break
-  //       }
-  //       case '#': {
-  //         console.log()
-  //         return document.getElementById(element.slice(1));
-  //         break
-  //       }
-  //       default: {
-  //         return document.querySelector(element);
-  //         break
-  //       }
-  //     }
-  //   }
-  //   const el: HTMLElement = getElement();
-  //   if ( el !== null ) {
-  //     const y = el.getBoundingClientRect().y;
-  //     window.scrollTo( 0 , 10 );
-  //     console.log(y);
-  //   } else {
-  //     console.error('no element has been founded!');
-  //   }
-  // }
+  rebserv(): void{
+    for(let el of this.lastObservedItems){
+      this.observer.unobserve(el);
+    }
+    this.lastObservedItems = [];
+    this.observ();
+  }
 }
