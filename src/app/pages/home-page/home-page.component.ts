@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { GlobalDataService } from 'src/app/global-data/global-data.service';
+import { homeLangData } from 'src/app/global-data/LangData.type';
 
 @Component({
   selector: 'app-home-page',
@@ -7,10 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomePageComponent implements OnInit {
   showSlider: boolean = false;
-  constructor() { }
+  langData: homeLangData;
+  constructor( private globalDS: GlobalDataService ) { }
 
   ngOnInit(): void {
-    
+    this.langData = this.globalDS.langData.home;
     this.checkForDesktop();
   }
 

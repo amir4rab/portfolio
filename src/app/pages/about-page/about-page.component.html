@@ -3,54 +3,48 @@
         <div class="column">
             <div class="column__group">
                 <div class="title">
-                    Education
+                    {{langData.education}}
                 </div>
                 <div class="text">
-                    bachelor degree in computer engineering from <a href="https://en.wikipedia.org/wiki/Islamic_Azad_University" target="_">iau</a>.
+                    {{langData.educationText}}
                 </div>
             </div>
             <div class="column__group">
                 <div class="title">
-                    Language skills
+                    {{langData.languageSkills}}
                 </div>
-                <div class="text">
-                    German: A1.1
-                </div>
-                <div class="text">
-                    English: fluent
-                </div>
-                <div class="text">
-                    Persian( Farsi ): Native
+                <div class="text" *ngFor="let lang of langData.languageSkillsText">
+                    {{lang}}
                 </div>
             </div>
             <div class="column__group">
                 <div class="title">
-                    Other skills
+                    {{langData.otherSkills}}
                 </div>
                 <div class="text">
-                    Semi knowledge of Figma, Adobe photoshop and Adobe premiere pro.
+                    {{langData.otherSkillsText}}
                 </div>
             </div>
         </div>
         <div class="column">
             <div class="column__group">
                 <div class="title">
-                    Programing skills
+                    {{langData.programingSkills}}
                 </div>
                 <div class="semi-title">
-                    Advance
+                    {{langData.programingSkillsAdvance}}
                 </div>
                 <div class="text">
                     Javascript, Css, Scss, Html
                 </div>
                 <div class="semi-title">
-                    Intermediate
+                    {{langData.programingSkillsIntermediate}}
                 </div>
                 <div class="text">
                     typescript
                 </div>
                 <div class="semi-title">
-                    Beginner
+                    {{langData.programingSkillsBeginner}}
                 </div>
                 <div class="text">
                     Angular

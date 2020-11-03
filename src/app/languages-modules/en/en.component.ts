@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LangData } from 'src/app/global-data/LangData.type';
 import { project } from 'src/app/pages/projects-page/project.type';
 import { GlobalDataService } from '../../global-data/global-data.service'
 
@@ -98,11 +99,51 @@ export class EnComponent implements OnInit {
         }
       ]
     }
-  ] 
+  ]
+  langData: LangData = {
+    'home' : {
+        title: 'I am Amir Arab a front-end developer',
+        myProjects:'My projects',
+        aboutMe: 'About me',
+    } ,
+    'projects' : {
+        about: 'About',
+        technologies: 'Technologies',
+        codeBtn: 'Code',
+        demoBtn: 'Demo'
+    } ,
+    'about': {
+        education: 'education',
+        educationText: 'bachelor degree in computer engineering from iau.',
+
+        languageSkills: 'Language skills',
+        languageSkillsText: [
+          'German: A1.1',
+          'English: fluent',
+          'Persian( Farsi ): Native'
+        ],
+
+        otherSkills: 'Other skills',
+        otherSkillsText: 'Semi knowledge of Figma, Adobe photoshop and Adobe premiere pro.',
+
+        programingSkills: 'Programing skills',
+
+        programingSkillsAdvance: 'Advance',
+        programingSkillsIntermediate: 'Intermediate',
+        programingSkillsBeginner: 'Beginner',
+    } ,
+    'contact': {
+        contactMe: 'contactMe',
+        myPages: 'My pages',
+
+        emailBtn: 'email',
+    }
+  }
   constructor(private globalDS: GlobalDataService) { }
 
   ngOnInit(): void {
     this.globalDS.reobserv();
+    this.globalDS.langData = this.langData;
   }
 
 }

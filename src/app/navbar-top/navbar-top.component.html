@@ -6,13 +6,13 @@
         <a [ngClass]="activeLink === 'contact' ? 'active':'-'"  href="#contact">Contact</a>
     </div>
     <div class="select-section">
-        <button class="active">
+        <button [routerLink]="['/','en']" [routerLinkActive]="['active']">
             En
         </button>
-        <button>
+        <button [routerLink]="['/','de']" [routerLinkActive]="['active']">
             De
         </button>
-        <button>
+        <button [routerLink]="['/','fa']" [routerLinkActive]="['active']">
             Fa
         </button>
     </div>

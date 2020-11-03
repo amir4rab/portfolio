@@ -43,10 +43,6 @@
                 }
             }
 
-            // &:not(:last-child){
-            //     margin-right: .5rem;
-            // }
-
             &:hover {
                 color: transparentize($light, .3);
                 cursor: pointer;

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { GlobalDataService } from 'src/app/global-data/global-data.service';
+import { aboutLangData } from 'src/app/global-data/LangData.type';
 
 @Component({
   selector: 'app-about-page',
@@ -6,13 +8,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about-page.component.scss']
 })
 export class AboutPageComponent implements OnInit {
-
-  constructor() { }
+  langData: aboutLangData;
+  constructor( private globalDS: GlobalDataService ) { }
 
   ngOnInit(): void {
-  }
-  scrollTo(id:string): void{
-    console.log('It works!');
-    document.getElementById(id).scrollIntoView();
+    this.langData = this.globalDS.langData.about;
   }
 }

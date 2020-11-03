@@ -5,7 +5,7 @@
         </h2>
         <div class="about">
             <div class="about__title">
-                About
+                {{langData.about}}
             </div>
             <div class="about__content">
                 {{pData.aboutShort}}
@@ -13,7 +13,7 @@
         </div>
         <div class="technologies">
             <div class="technologies__title">
-                Technologies
+                {{langData.technologies}}
             </div>
             <div class="technologies__content">
                 <div class="item" *ngFor="let item of pData.technologies" >
@@ -24,10 +24,10 @@
         </div>
         <div class="button-section">
             <button class="primary">
-                <a [href]="pData.githubLink" target="_">Code</a>
+                <a [href]="pData.githubLink" target="_">{{langData.codeBtn}}</a>
             </button>
             <button class="secondary">
-                <a [href]="pData.liveDemoLink" target="_">Demo</a>
+                <a [href]="pData.liveDemoLink" target="_">{{langData.demoBtn}}</a>
             </button>
         </div>
     </div>
