@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
-import { Observable } from 'rxjs';
 import { GlobalDataService } from '../global-data/global-data.service';
+import { ScrollToService } from '../utilities/scroll-to.service';
 
 @Component({
   selector: 'app-navbar-top',
@@ -11,17 +10,17 @@ import { GlobalDataService } from '../global-data/global-data.service';
 export class NavbarTopComponent implements OnInit {
   activeLink: string = null;
   setClassActive: boolean = null;
-
   lastObservedItems :HTMLElement[] = [];
   observer: IntersectionObserver;
 
-  constructor(private globalDS: GlobalDataService, private activatedRoute: ActivatedRoute) { }
+  constructor(private globalDS: GlobalDataService,private scrollTo: ScrollToService) { }
 
   ngOnInit(): void {
+
+
     this.iObserver();
-    
+
     this.globalDS.observerReobserv.subscribe( _ => {
-      this.getActiveRout();
       if( this.lastObservedItems.length === 0 ) {
         this.observ();
       } else {
@@ -62,13 +61,7 @@ export class NavbarTopComponent implements OnInit {
     this.observ();
   }
 
-  getActiveRout(): void{
-
-    // this.activatedRoute.url.subscribe(res=>console.log(res));
-    //this.activatedRoute.params.subscribe(res => console.log(res));
-
-  }
-  setEnClass(state: boolean): void{
-
+  scrollToEl(el: string){
+    this.scrollTo.fn(el);
   }
 }

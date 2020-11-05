@@ -3,21 +3,21 @@
 .navbar-top {
     position: fixed;
     z-index: 500;
-
+    
     top: 0;
     left: 0;
     
     width: 100%;
-
+    
     background: $secBg;
-
+    
     display: flex;
     justify-content: space-between;
     justify-items: center;
     align-items: center;
-
+    
     padding: .5rem 5vw;
-
+    
 
     .navbar-links {
         color: $light;
@@ -76,5 +76,14 @@
                 background: darken($secBg, 5%);
             }
         }
+    }
+}
+
+@media ( max-width: 650px ){
+    .navbar-links{
+        display: none;
+    }
+    .select-section{
+        margin-left: auto;
     }
 }

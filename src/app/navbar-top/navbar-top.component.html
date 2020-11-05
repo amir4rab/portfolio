@@ -1,9 +1,9 @@
 <nav class="navbar-top">
     <div class="navbar-links">
-        <a [ngClass]="activeLink === 'home' ? 'active':'-'"  href="#home">Home</a>
-        <a [ngClass]="activeLink === 'projects' ? 'active':'-'"  href="#projects">Projects</a>
-        <a [ngClass]="activeLink === 'about' ? 'active':'-'"  href="#about">About me</a>
-        <a [ngClass]="activeLink === 'contact' ? 'active':'-'"  href="#contact">Contact</a>
+        <a [ngClass]="activeLink === 'home' ? 'active':'-'"  (click)="scrollToEl('#home')">Home</a>
+        <a [ngClass]="activeLink === 'projects' ? 'active':'-'"  (click)="scrollToEl('#projects')">Projects</a>
+        <a [ngClass]="activeLink === 'about' ? 'active':'-'"  (click)="scrollToEl('#about')">About me</a>
+        <a [ngClass]="activeLink === 'contact' ? 'active':'-'"  (click)="scrollToEl('#contact')">Contact</a>
     </div>
     <div class="select-section">
         <button [routerLink]="['/','en']" [routerLinkActive]="['active']">

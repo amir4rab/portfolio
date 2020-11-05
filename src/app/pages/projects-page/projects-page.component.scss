@@ -85,3 +85,16 @@
     }
 
 }
+@media ( max-width: 650px ) {
+    #projects .arrows img{
+                height: 2.5rem;
+    }
+    .slider__dots{
+            .dot{
+                width: 5vw;
+                &.active{
+                    width: 10vw;
+                }
+            } 
+    }
+}

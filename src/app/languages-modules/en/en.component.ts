@@ -102,7 +102,7 @@ export class EnComponent implements OnInit {
   ]
   langData: LangData = {
     'home' : {
-        title: 'I am Amir Arab a front-end developer',
+        title: '👋 Hi, I am Amir Arab a front-end developer',
         myProjects:'My projects',
         aboutMe: 'About me',
     } ,
