@@ -12,8 +12,8 @@ export class DeComponent implements OnInit {
   pArr: project[] = [
     {
       title: 'news app',
-      aboutShort: 'a simple news app that fetch data from api and let you save your prefrences.',
-      aboutFull: 'a simple news app that fetch data from api and let you save your prefrences.',
+      aboutShort: 'Eine einfache Nachrichten-App, mit der Sie Daten von der API abrufen und Ihre Einstellungen speichern können.',
+      aboutFull: 'Eine einfache Nachrichten-App, mit der Sie Daten von der API abrufen und Ihre Einstellungen speichern können.',
       imageUrl: './../../assets/screens/news-app.png',
       githubLink: 'https://github.com/amir4rab/newsAppPro',
       liveDemoLink: 'https://news.amir4rab.com/',
@@ -27,115 +27,49 @@ export class DeComponent implements OnInit {
           imageUrl: './../../assets/logos/compressed/tsLogoWhite.svg'
         },
         {
-          name: 'javascript',
-          imageUrl: './../../assets/logos/compressed/jsLogoWhite.svg'
+          name: 'firebase',
+          imageUrl: './../../assets/logos/compressed/firebaseLogoWhite.svg'
         }
       ]
     },
-    {
-      title: 'news app 2',
-      aboutShort: 'a simple news app that fetch data from api and let you save your prefrences.',
-      aboutFull: 'a simple news app that fetch data from api and let you save your prefrences.',
-      imageUrl: './../../assets/screens/news-app.png',
-      githubLink: 'https://github.com/amir4rab/newsAppPro',
-      liveDemoLink: 'https://news.amir4rab.com/',
-      technologies: [
-        {
-          name: 'angular',
-          imageUrl: './../../assets/logos/compressed/angularLogoWhite.svg'
-        },
-        {
-          name: 'typescript',
-          imageUrl: './../../assets/logos/compressed/tsLogoWhite.svg'
-        },
-        {
-          name: 'javascript',
-          imageUrl: './../../assets/logos/compressed/jsLogoWhite.svg'
-        }
-      ]
-    },
-    {
-      title: 'news app 3',
-      aboutShort: 'a simple news app that fetch data from api and let you save your prefrences.',
-      aboutFull: 'a simple news app that fetch data from api and let you save your prefrences.',
-      imageUrl: './../../assets/screens/news-app.png',
-      githubLink: 'https://github.com/amir4rab/newsAppPro',
-      liveDemoLink: 'https://news.amir4rab.com/',
-      technologies: [
-        {
-          name: 'angular',
-          imageUrl: './../../assets/logos/compressed/angularLogoWhite.svg'
-        },
-        {
-          name: 'typescript',
-          imageUrl: './../../assets/logos/compressed/tsLogoWhite.svg'
-        },
-        {
-          name: 'javascript',
-          imageUrl: './../../assets/logos/compressed/jsLogoWhite.svg'
-        }
-      ]
-    },
-    {
-      title: 'news app 4',
-      aboutShort: 'a simple news app that fetch data from api and let you save your prefrences.',
-      aboutFull: 'a simple news app that fetch data from api and let you save your prefrences.',
-      imageUrl: './../../assets/screens/news-app.png',
-      githubLink: 'https://github.com/amir4rab/newsAppPro',
-      liveDemoLink: 'https://news.amir4rab.com/',
-      technologies: [
-        {
-          name: 'angular',
-          imageUrl: './../../assets/logos/compressed/angularLogoWhite.svg'
-        },
-        {
-          name: 'typescript',
-          imageUrl: './../../assets/logos/compressed/tsLogoWhite.svg'
-        },
-        {
-          name: 'javascript',
-          imageUrl: './../../assets/logos/compressed/jsLogoWhite.svg'
-        }
-      ]
-    }
   ]
   langData: LangData = {
     'home' : {
-        title: 'Ich bin Amir Arab a front-end developer',
-        myProjects:'My projects',
-        aboutMe: 'About me',
+        title: '👋 Halo, Ich bin Amir Arab ein Front-End-Programmierer',
+        myProjects:'Meine Projekte',
+        aboutMe: 'Über mich',
     } ,
     'projects' : {
-        about: 'About',
-        technologies: 'Technologies',
+        about: 'Über',
+        technologies: 'Technologien',
         codeBtn: 'Code',
         demoBtn: 'Demo'
     } ,
     'about': {
-        education: 'education',
-        educationText: 'bachelor degree in computer engineering from iau.',
+        education: 'Bildung',
+        educationText: 'Bachelor-Abschluss in Computertechnik von Iau.',
 
-        languageSkills: 'Language skills',
+        languageSkills: 'Sprach kenntnisse',
         languageSkillsText: [
-          'German: A1.1',
-          'English: fluent',
-          'Persian( Farsi ): Native'
+          'Deutsch: A1.1',
+          'Englicsh: fließend',
+          'Persisch: Einheimisch'
         ],
 
-        otherSkills: 'Other skills',
-        otherSkillsText: 'Semi knowledge of Figma, Adobe photoshop and Adobe premiere pro.',
+        otherSkills: 'Andere Fähigkeiten',
+        otherSkillsText: 'Halbkenntnisse in Figma, Adobe Photoshop und Adobe Premiere Pro.',
 
-        programingSkills: 'Programing skills',
+        programingSkills: 'Programmier kenntnisse',
 
-        programingSkillsAdvance: 'Advance',
-        programingSkillsIntermediate: 'Intermediate',
-        programingSkillsBeginner: 'Beginner',
+        programingSkillsAdvance: 'Fortgeschrittene',
+        programingSkillsIntermediate: 'Mittlere',
+        programingSkillsBeginner: 'Anfänger',
     } ,
     'contact': {
-        contactMe: 'contactMe',
-        myPages: 'My pages',
+        contactMe: 'Kontaktiere mich',
+        myPages: 'Meine Seiten',
 
-        emailBtn: 'email',
+        emailBtn: 'Email',
     }
   }
   constructor(private globalDS: GlobalDataService) { }

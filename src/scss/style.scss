@@ -79,6 +79,8 @@ $light: #ECF0F1;
                 .title {
                     font-size: 1.25rem;
                     padding-bottom: 1rem;
+                    max-width: 35vw;
+                    line-break: strict;
                 }
                 .text {
                     font-size: .9rem;

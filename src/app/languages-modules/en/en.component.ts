@@ -13,8 +13,8 @@ export class EnComponent implements OnInit {
   pArr: project[] = [
     {
       title: 'news app',
-      aboutShort: 'a simple news app that fetch data from api and let you save your prefrences.',
-      aboutFull: 'a simple news app that fetch data from api and let you save your prefrences.',
+      aboutShort: 'a simple news app that fetch data from api and let you save your preferences.',
+      aboutFull: 'a simple news app that fetch data from api and let you save your preferences.',
       imageUrl: './../../assets/screens/news-app.png',
       githubLink: 'https://github.com/amir4rab/newsAppPro',
       liveDemoLink: 'https://news.amir4rab.com/',
@@ -26,84 +26,10 @@ export class EnComponent implements OnInit {
         {
           name: 'typescript',
           imageUrl: './../../assets/logos/compressed/tsLogoWhite.svg'
-        },
-        {
-          name: 'javascript',
-          imageUrl: './../../assets/logos/compressed/jsLogoWhite.svg'
         },
         {
           name: 'firebase',
-          imageUrl: './../../assets/logos/compressed/jsLogoWhite.svg'
-        },
-        {
-          name: 'web',
-          imageUrl: './../../assets/logos/compressed/jsLogoWhite.svg'
-        }
-      ]
-    },
-    {
-      title: 'news app 2',
-      aboutShort: 'a simple news app that fetch data from api and let you save your prefrences.',
-      aboutFull: 'a simple news app that fetch data from api and let you save your prefrences.',
-      imageUrl: './../../assets/screens/news-app.png',
-      githubLink: 'https://github.com/amir4rab/newsAppPro',
-      liveDemoLink: 'https://news.amir4rab.com/',
-      technologies: [
-        {
-          name: 'angular',
-          imageUrl: './../../assets/logos/compressed/angularLogoWhite.svg'
-        },
-        {
-          name: 'typescript',
-          imageUrl: './../../assets/logos/compressed/tsLogoWhite.svg'
-        },
-        {
-          name: 'javascript',
-          imageUrl: './../../assets/logos/compressed/jsLogoWhite.svg'
-        }
-      ]
-    },
-    {
-      title: 'news app 3',
-      aboutShort: 'a simple news app that fetch data from api and let you save your prefrences.',
-      aboutFull: 'a simple news app that fetch data from api and let you save your prefrences.',
-      imageUrl: './../../assets/screens/news-app.png',
-      githubLink: 'https://github.com/amir4rab/newsAppPro',
-      liveDemoLink: 'https://news.amir4rab.com/',
-      technologies: [
-        {
-          name: 'angular',
-          imageUrl: './../../assets/logos/compressed/angularLogoWhite.svg'
-        },
-        {
-          name: 'typescript',
-          imageUrl: './../../assets/logos/compressed/tsLogoWhite.svg'
-        },
-        {
-          name: 'javascript',
-          imageUrl: './../../assets/logos/compressed/jsLogoWhite.svg'
-        }
-      ]
-    },
-    {
-      title: 'news app 4',
-      aboutShort: 'a simple news app that fetch data from api and let you save your prefrences.',
-      aboutFull: 'a simple news app that fetch data from api and let you save your prefrences.',
-      imageUrl: './../../assets/screens/news-app.png',
-      githubLink: 'https://github.com/amir4rab/newsAppPro',
-      liveDemoLink: 'https://news.amir4rab.com/',
-      technologies: [
-        {
-          name: 'angular',
-          imageUrl: './../../assets/logos/compressed/angularLogoWhite.svg'
-        },
-        {
-          name: 'typescript',
-          imageUrl: './../../assets/logos/compressed/tsLogoWhite.svg'
-        },
-        {
-          name: 'javascript',
-          imageUrl: './../../assets/logos/compressed/jsLogoWhite.svg'
+          imageUrl: './../../assets/logos/compressed/firebaseLogoWhite.svg'
         }
       ]
     }
@@ -121,8 +47,8 @@ export class EnComponent implements OnInit {
         demoBtn: 'Demo'
     } ,
     'about': {
-        education: 'education',
-        educationText: 'bachelor degree in computer engineering from iau.',
+        education: 'Education',
+        educationText: 'Bachelor degree in computer engineering from iau.',
 
         languageSkills: 'Language skills',
         languageSkillsText: [
@@ -141,10 +67,10 @@ export class EnComponent implements OnInit {
         programingSkillsBeginner: 'Beginner',
     } ,
     'contact': {
-        contactMe: 'contactMe',
+        contactMe: 'Contact me',
         myPages: 'My pages',
 
-        emailBtn: 'email',
+        emailBtn: 'Email',
     }
   }
   constructor(private globalDS: GlobalDataService) { }
