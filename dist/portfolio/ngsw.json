@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1604650486400,
+  "timestamp": 1604762009878,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -11,16 +11,16 @@
         "ignoreVary": true
       },
       "urls": [
-        "/1.d20333a76a96dc937911.js",
-        "/2.22504a7c85cf9390b16e.js",
-        "/6.f599122be19634eef8ca.js",
+        "/1.f478243bcdc07d8f8bd1.js",
+        "/2.950976f922301719d4f3.js",
+        "/6.1d563113b1befc24b674.js",
         "/favicon.ico",
         "/index.html",
-        "/main.2909826a0edc650c9c73.js",
+        "/main.494f91df9fa54cfe3f8e.js",
         "/manifest.webmanifest",
         "/polyfills.8456b03b9e12a1d468e8.js",
-        "/runtime.832c5479db37808d13c1.js",
-        "/styles.bde8bf6c21e6ef9a524b.css"
+        "/runtime.2d31d332098f2fbeb267.js",
+        "/styles.cf93a141d0cde7810b4d.css"
       ],
       "patterns": [
         "https:\\/\\/fonts\\.googleapis\\.com\\/css2\\?family=Roboto:wght@400;700&display=swap",
@@ -46,9 +46,11 @@
         "/assets/icons/scroll-left.svg",
         "/assets/icons/scroll-right.svg",
         "/assets/logos/compressed/angularLogoWhite.svg",
+        "/assets/logos/compressed/firebaseLogoWhite.svg",
         "/assets/logos/compressed/jsLogoWhite.svg",
         "/assets/logos/compressed/tsLogoWhite.svg",
         "/assets/logos/og/angularLogoWhite.svg",
+        "/assets/logos/og/firebaseLogoWhite.svg",
         "/assets/logos/og/jsLogoWhite.svg",
         "/assets/logos/og/tsLogoWhite.svg",
         "/assets/screens/news-app.png"
@@ -58,9 +60,9 @@
   ],
   "dataGroups": [],
   "hashTable": {
-    "/1.d20333a76a96dc937911.js": "2188ad817d6b2432d0087fa75b632a12877adecb",
-    "/2.22504a7c85cf9390b16e.js": "aa8ec778c310a7a76b7125a60985faab82a9775b",
-    "/6.f599122be19634eef8ca.js": "5355a7113133ab0b7e302a8596cebe3604ea698b",
+    "/1.f478243bcdc07d8f8bd1.js": "9b68700a50340ca6f8866cc7b644930ccc553e0c",
+    "/2.950976f922301719d4f3.js": "9440f3154377d0b279c51cefafa166fe9bb308bd",
+    "/6.1d563113b1befc24b674.js": "87f3cfe270ff925ae4d879ce436997abc5c2dfcc",
     "/assets/icons/icon-128x128.png": "517e92dc4a106290391b74efd3345df4d1334d39",
     "/assets/icons/icon-144x144.png": "39ba0817faf4a66373716e3220390bce25fe8f74",
     "/assets/icons/icon-152x152.png": "80a473bc7cbbc40092906bcec6b55d8722ec3339",
@@ -72,19 +74,21 @@
     "/assets/icons/scroll-left.svg": "e4c07be8c1b10dc1f036dfc1b0de31bb92212cbf",
     "/assets/icons/scroll-right.svg": "6f5669df518231407e6d67c0140becc82a767177",
     "/assets/logos/compressed/angularLogoWhite.svg": "4297f76c1d74da44128b41c5cdf8441392d33a7c",
+    "/assets/logos/compressed/firebaseLogoWhite.svg": "151ca39c053848fccf7868717749c0dc28a58139",
     "/assets/logos/compressed/jsLogoWhite.svg": "4bd1615f16e117198cd74b23550109d05f37804e",
     "/assets/logos/compressed/tsLogoWhite.svg": "97c0bc99169e2e335c1e90728527348d8d20d79e",
     "/assets/logos/og/angularLogoWhite.svg": "e947b8121546e1011b26de9b4992bcd68dd4db3b",
+    "/assets/logos/og/firebaseLogoWhite.svg": "8218f65c320649841955e8ea677c5ce7342e5720",
     "/assets/logos/og/jsLogoWhite.svg": "f9214d3f980d7d4b3bd404e198313c8d657921b7",
     "/assets/logos/og/tsLogoWhite.svg": "4a6f729602f5304ce56a35c46c9baf208e3551f4",
     "/assets/screens/news-app.png": "330a7626d8b54d917f64fec6b3b0b8ea0a94a270",
     "/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/index.html": "27d9bb6078f47f6fbad5afe4c2b7cbe1ef4172e2",
-    "/main.2909826a0edc650c9c73.js": "a95000764a70eba1a7a31869fc2b1a4f132f18fb",
+    "/index.html": "276d6ec762bcd99448805599c348042450d54ecc",
+    "/main.494f91df9fa54cfe3f8e.js": "405a57e3ce38c411d531d213343f8e67033b50a5",
     "/manifest.webmanifest": "e14484a4f652e2f158ec8045c44ef1b6d61e9f2d",
     "/polyfills.8456b03b9e12a1d468e8.js": "2dcfebbcebb2ac3b3ffca5ed0b4062735c4d8c83",
-    "/runtime.832c5479db37808d13c1.js": "dac0b4437781d212645a8dc75a544394314a1fc1",
-    "/styles.bde8bf6c21e6ef9a524b.css": "4d59d13c7e2faa8dc62ab123dfd86c21eb5d7cd3"
+    "/runtime.2d31d332098f2fbeb267.js": "75f1a264f619fa0182ba17eaeac22d99956ac082",
+    "/styles.cf93a141d0cde7810b4d.css": "1dc0b4194745783e8e0704080fbb73ec71191d51"
   },
   "navigationUrls": [
     {
