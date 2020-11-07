@@ -56,7 +56,6 @@
             background-color: $light;
             border-radius: .75rem;
             opacity: .5;
-            filter: drop-shadow(0 0 .5rem transparent);
             transition: opacity .3s ease-in-out,
                         width .3s ease-in-out,
                         filter .1s ease-in-out;
@@ -75,7 +74,6 @@
             &:active{
                 opacity: .75;
                 opacity: 1;
-                filter: drop-shadow(0 0 .3rem $highlights);
             }
 
             &:not(:last-child){

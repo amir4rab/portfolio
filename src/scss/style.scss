@@ -71,6 +71,7 @@ $light: #ECF0F1;
 
 @media ( max-width: 650px ) {
     .inner{
+        height: 80%;
         justify-content: space-between;
         .column{
             max-width: 35vw;

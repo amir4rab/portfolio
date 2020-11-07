@@ -3,8 +3,8 @@
         <h1 class="title">{{langData.title}}</h1>
         <app-home-slider *ngIf="showSlider"></app-home-slider>
         <div class="buttons-section">
-            <button class="primary" (click)="scrollTo('projects')">{{langData.myProjects}}</button>
-            <button class="darken" (click)="scrollTo('jack')">{{langData.aboutMe}}</button>
+            <button class="primary" (click)="scrollToEl('#projects')">{{langData.myProjects}}</button>
+            <button class="darken" (click)="scrollToEl('#about')">{{langData.aboutMe}}</button>
         </div>
     </div>
 </section>

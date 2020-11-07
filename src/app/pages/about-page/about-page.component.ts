@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { GlobalDataService } from 'src/app/global-data/global-data.service';
 import { aboutLangData } from 'src/app/global-data/LangData.type';
 
+
 @Component({
   selector: 'app-about-page',
   templateUrl: './about-page.component.html',
@@ -14,4 +15,6 @@ export class AboutPageComponent implements OnInit {
   ngOnInit(): void {
     this.langData = this.globalDS.langData.about;
   }
+
+
 }

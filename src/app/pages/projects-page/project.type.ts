@@ -5,5 +5,5 @@ export type project = {
     imageUrl: string,
     githubLink: string,
     liveDemoLink: string,
-    technologies: { name:string , imageUrl: string }[],
+    technologies: { name : string , imageUrl : string }[],
 }

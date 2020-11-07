@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1604583784105,
+  "timestamp": 1604650486400,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -11,7 +11,7 @@
         "ignoreVary": true
       },
       "urls": [
-        "/1.b13ccc5a9a3556caefa7.js",
+        "/1.d20333a76a96dc937911.js",
         "/2.22504a7c85cf9390b16e.js",
         "/6.f599122be19634eef8ca.js",
         "/favicon.ico",
@@ -19,10 +19,13 @@
         "/main.2909826a0edc650c9c73.js",
         "/manifest.webmanifest",
         "/polyfills.8456b03b9e12a1d468e8.js",
-        "/runtime.f03323df320145758c0d.js",
+        "/runtime.832c5479db37808d13c1.js",
         "/styles.bde8bf6c21e6ef9a524b.css"
       ],
-      "patterns": []
+      "patterns": [
+        "https:\\/\\/fonts\\.googleapis\\.com\\/css2\\?family=Roboto:wght@400;700&display=swap",
+        "https:\\/\\/fonts\\.gstatic\\.com\\/s\\/roboto"
+      ]
     },
     {
       "name": "assets",
@@ -55,7 +58,7 @@
   ],
   "dataGroups": [],
   "hashTable": {
-    "/1.b13ccc5a9a3556caefa7.js": "420b2f2cd918c145b8b2ce9dab49f3debf071b58",
+    "/1.d20333a76a96dc937911.js": "2188ad817d6b2432d0087fa75b632a12877adecb",
     "/2.22504a7c85cf9390b16e.js": "aa8ec778c310a7a76b7125a60985faab82a9775b",
     "/6.f599122be19634eef8ca.js": "5355a7113133ab0b7e302a8596cebe3604ea698b",
     "/assets/icons/icon-128x128.png": "517e92dc4a106290391b74efd3345df4d1334d39",
@@ -76,11 +79,11 @@
     "/assets/logos/og/tsLogoWhite.svg": "4a6f729602f5304ce56a35c46c9baf208e3551f4",
     "/assets/screens/news-app.png": "330a7626d8b54d917f64fec6b3b0b8ea0a94a270",
     "/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/index.html": "1515a7267cc41a129047761738c9a746f1513b47",
+    "/index.html": "27d9bb6078f47f6fbad5afe4c2b7cbe1ef4172e2",
     "/main.2909826a0edc650c9c73.js": "a95000764a70eba1a7a31869fc2b1a4f132f18fb",
     "/manifest.webmanifest": "e14484a4f652e2f158ec8045c44ef1b6d61e9f2d",
     "/polyfills.8456b03b9e12a1d468e8.js": "2dcfebbcebb2ac3b3ffca5ed0b4062735c4d8c83",
-    "/runtime.f03323df320145758c0d.js": "8d72efb1a4e1928ae00f9f5f1b61f5542c6ac236",
+    "/runtime.832c5479db37808d13c1.js": "dac0b4437781d212645a8dc75a544394314a1fc1",
     "/styles.bde8bf6c21e6ef9a524b.css": "4d59d13c7e2faa8dc62ab123dfd86c21eb5d7cd3"
   },
   "navigationUrls": [

@@ -100,7 +100,6 @@
                     padding: .5em 3.5em;
                     font-size: 1rem;
                     font-weight: 700;
-                    //background-color: #ff0000;
                 }
                 &:not(:last-child){
                     margin-right: 2rem;
@@ -125,24 +124,35 @@
 }
 @media ( max-width: 650px ) {
     .project-section{
+        height: 65vh;
         .details{
+            padding-bottom: 1.5rem;
+            justify-content: space-between;
+            //salign-content: space-between;
+            height: 100%;
             width: 80%;
             .title{
                 font-size: 2rem;
-                padding-bottom: 1rem;
+                padding-bottom: .75rem;
             }
             .about{
                 &__title{
                     font-size: 1.2rem;
-                    padding-bottom: .5rem;
+                    padding-bottom: .25rem;
                 }
             }
             .technologies{
+                //width: 80vw;
                 &__title{
                     font-size: 1.2rem;
-                    padding-bottom: .5rem;
+                    padding-bottom: .25rem;
                 }
                 &__content{
+                    max-width: 100%;
+                    overflow: hidden;
+                    display: flex;
+                    justify-content: flex-start;
+                    flex-wrap: wrap;
                     margin-bottom: 1.5rem;
                     .item img{
                             display: none;

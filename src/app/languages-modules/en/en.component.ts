@@ -30,6 +30,14 @@ export class EnComponent implements OnInit {
         {
           name: 'javascript',
           imageUrl: './../../assets/logos/compressed/jsLogoWhite.svg'
+        },
+        {
+          name: 'firebase',
+          imageUrl: './../../assets/logos/compressed/jsLogoWhite.svg'
+        },
+        {
+          name: 'web',
+          imageUrl: './../../assets/logos/compressed/jsLogoWhite.svg'
         }
       ]
     },
