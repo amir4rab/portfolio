@@ -11,6 +11,11 @@
 html{
     scroll-behavior: smooth;
 }
+
+.html-scroll-snap {
+    scroll-snap-type: y proximity;
+}
+
 body{
     background-color: #2C3E50;
 }
@@ -30,6 +35,7 @@ body{
 
 
 section{
+    scroll-snap-align: center;
     height: 100vh;
     background-color: $mainBg;
     display: flex;

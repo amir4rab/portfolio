@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1604762009878,
+  "timestamp": 1605189339965,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -16,11 +16,11 @@
         "/6.1d563113b1befc24b674.js",
         "/favicon.ico",
         "/index.html",
-        "/main.494f91df9fa54cfe3f8e.js",
+        "/main.a797464e5861d513503d.js",
         "/manifest.webmanifest",
         "/polyfills.8456b03b9e12a1d468e8.js",
         "/runtime.2d31d332098f2fbeb267.js",
-        "/styles.cf93a141d0cde7810b4d.css"
+        "/styles.486382dba82799b0b725.css"
       ],
       "patterns": [
         "https:\\/\\/fonts\\.googleapis\\.com\\/css2\\?family=Roboto:wght@400;700&display=swap",
@@ -83,12 +83,12 @@
     "/assets/logos/og/tsLogoWhite.svg": "4a6f729602f5304ce56a35c46c9baf208e3551f4",
     "/assets/screens/news-app.png": "330a7626d8b54d917f64fec6b3b0b8ea0a94a270",
     "/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/index.html": "276d6ec762bcd99448805599c348042450d54ecc",
-    "/main.494f91df9fa54cfe3f8e.js": "405a57e3ce38c411d531d213343f8e67033b50a5",
+    "/index.html": "062d3f81343f07520631e997a0c5809abe640928",
+    "/main.a797464e5861d513503d.js": "b827afcaed41e291d64ed27f795d2b62b445ebcd",
     "/manifest.webmanifest": "e14484a4f652e2f158ec8045c44ef1b6d61e9f2d",
     "/polyfills.8456b03b9e12a1d468e8.js": "2dcfebbcebb2ac3b3ffca5ed0b4062735c4d8c83",
     "/runtime.2d31d332098f2fbeb267.js": "75f1a264f619fa0182ba17eaeac22d99956ac082",
-    "/styles.cf93a141d0cde7810b4d.css": "1dc0b4194745783e8e0704080fbb73ec71191d51"
+    "/styles.486382dba82799b0b725.css": "374756d447c5a2e0104a7c1551060c4592d13499"
   },
   "navigationUrls": [
     {

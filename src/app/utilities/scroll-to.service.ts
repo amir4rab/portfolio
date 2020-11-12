@@ -6,8 +6,13 @@ import { start } from 'repl';
   providedIn: 'root'
 })
 export class ScrollToService {
+  htmlEl: HTMLElement = null;
 
-  constructor() { }
+  constructor() { 
+    this.htmlEl= document.querySelector('html');
+    console.log(this.htmlEl);
+    this.htmlEl.classList.add('html-scroll-snap');
+  }
 
   fn(elementId: string): void{
     switch(elementId[0]){
@@ -40,28 +45,42 @@ export class ScrollToService {
       }
     }
   }
-  animateScroll(el: HTMLElement): void{  
+  animateScroll(el: HTMLElement): void{
+    const htmlEl = document.querySelector('html');
+
+    htmlEl.classList.remove('html-scroll-snap');
+    
     let startTime: number = null;
     const anmiationD: number = 500;
-
+    
     let pageScrollY: number = window.pageYOffset;
-
+    
     const deltaY =  el.offsetTop - window.pageYOffset;
-
-    const stepY = deltaY / (anmiationD / 100 * 6);
-
+    
+    let stepY: number = null;
+    
     function animatingScroll(timestamp: number){
+
       if( startTime === null ){
         startTime = timestamp;
+        if ( timestamp - startTime < 32 ) {
+          stepY = deltaY / (anmiationD / 100 * 6);
+        } else {
+          stepY = deltaY / (anmiationD / 100 * 3);
+        }
       } 
-      const elapesd = timestamp - startTime;
+
       
+      const elapesd = timestamp - startTime;
+
       pageScrollY = pageScrollY + stepY;
 
       window.scrollTo(0, pageScrollY);
 
       if ( elapesd < anmiationD ) {
         window.requestAnimationFrame(animatingScroll);
+      }else{
+        htmlEl.classList.add('html-scroll-snap');
       }
     }
     window.requestAnimationFrame(animatingScroll);
