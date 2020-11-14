@@ -6,19 +6,17 @@ import { start } from 'repl';
   providedIn: 'root'
 })
 export class ScrollToService {
-  htmlEl: HTMLElement = null;
 
   constructor() { 
-    this.htmlEl= document.querySelector('html');
-    console.log(this.htmlEl);
-    this.htmlEl.classList.add('html-scroll-snap');
+    document.querySelector('html').classList.add('html-scroll-snap');
   }
 
   fn(elementId: string): void{
     switch(elementId[0]){
       case '#' : {
         try {
-          this.animateScroll(document.getElementById(elementId.slice(1)));
+          // this.animateScroll(document.getElementById(elementId.slice(1)));
+          document.getElementById(elementId.slice(1)).scrollIntoView();
           break
         } catch {
           console.warn('no element has been found');
@@ -27,7 +25,8 @@ export class ScrollToService {
       }
       case '.' : {
         try {
-          this.animateScroll(document.querySelector(elementId));
+          // this.animateScroll(document.querySelector(elementId));
+          document.getElementsByClassName(elementId)[0].scrollIntoView();
           break
         } catch {
           console.warn('no element has been found');
@@ -36,7 +35,8 @@ export class ScrollToService {
       }
       default : {
         try {
-          this.animateScroll(document.querySelector(elementId));
+          // this.animateScroll(document.querySelector(elementId));
+          document.querySelector(elementId).scrollIntoView();
           break
         } catch {
           console.warn('no element has been found');
@@ -58,6 +58,8 @@ export class ScrollToService {
     const deltaY =  el.offsetTop - window.pageYOffset;
     
     let stepY: number = null;
+
+    let lastElapesd: number = 0;
     
     function animatingScroll(timestamp: number){
 
@@ -69,9 +71,10 @@ export class ScrollToService {
           stepY = deltaY / (anmiationD / 100 * 3);
         }
       } 
-
       
       const elapesd = timestamp - startTime;
+      console.log((timestamp - startTime) - lastElapesd);
+      lastElapesd = elapesd;
 
       pageScrollY = pageScrollY + stepY;
 

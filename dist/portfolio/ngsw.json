@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1605189339965,
+  "timestamp": 1605336436236,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -12,14 +12,14 @@
       },
       "urls": [
         "/1.f478243bcdc07d8f8bd1.js",
-        "/2.950976f922301719d4f3.js",
-        "/6.1d563113b1befc24b674.js",
+        "/2.8c768c1edb34aa6d31fd.js",
+        "/6.1b029f77bd91f8296215.js",
         "/favicon.ico",
         "/index.html",
-        "/main.a797464e5861d513503d.js",
+        "/main.38026bddd1115c603fe8.js",
         "/manifest.webmanifest",
         "/polyfills.8456b03b9e12a1d468e8.js",
-        "/runtime.2d31d332098f2fbeb267.js",
+        "/runtime.ae0f59e9432b936dbe32.js",
         "/styles.486382dba82799b0b725.css"
       ],
       "patterns": [
@@ -61,8 +61,8 @@
   "dataGroups": [],
   "hashTable": {
     "/1.f478243bcdc07d8f8bd1.js": "9b68700a50340ca6f8866cc7b644930ccc553e0c",
-    "/2.950976f922301719d4f3.js": "9440f3154377d0b279c51cefafa166fe9bb308bd",
-    "/6.1d563113b1befc24b674.js": "87f3cfe270ff925ae4d879ce436997abc5c2dfcc",
+    "/2.8c768c1edb34aa6d31fd.js": "8670e062df81705e4874442835789a61c10137b4",
+    "/6.1b029f77bd91f8296215.js": "b89438eeff9a6ec913be579652d919ab19f0fb9e",
     "/assets/icons/icon-128x128.png": "517e92dc4a106290391b74efd3345df4d1334d39",
     "/assets/icons/icon-144x144.png": "39ba0817faf4a66373716e3220390bce25fe8f74",
     "/assets/icons/icon-152x152.png": "80a473bc7cbbc40092906bcec6b55d8722ec3339",
@@ -83,11 +83,11 @@
     "/assets/logos/og/tsLogoWhite.svg": "4a6f729602f5304ce56a35c46c9baf208e3551f4",
     "/assets/screens/news-app.png": "330a7626d8b54d917f64fec6b3b0b8ea0a94a270",
     "/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/index.html": "062d3f81343f07520631e997a0c5809abe640928",
-    "/main.a797464e5861d513503d.js": "b827afcaed41e291d64ed27f795d2b62b445ebcd",
+    "/index.html": "dd4db0236d2f1a3efb40711e4f59e23115e1137c",
+    "/main.38026bddd1115c603fe8.js": "bc38203c71565b47839c5f48bb2c256d436be625",
     "/manifest.webmanifest": "e14484a4f652e2f158ec8045c44ef1b6d61e9f2d",
     "/polyfills.8456b03b9e12a1d468e8.js": "2dcfebbcebb2ac3b3ffca5ed0b4062735c4d8c83",
-    "/runtime.2d31d332098f2fbeb267.js": "75f1a264f619fa0182ba17eaeac22d99956ac082",
+    "/runtime.ae0f59e9432b936dbe32.js": "565e299b2d0361d84e2310512ac3d0219f619763",
     "/styles.486382dba82799b0b725.css": "374756d447c5a2e0104a7c1551060c4592d13499"
   },
   "navigationUrls": [
