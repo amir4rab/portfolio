@@ -32,6 +32,6 @@
         </div>
     </div>
     <div class="img">
-        <img [src]="pData.imageUrl" alt="">
+        <img [src]="pData.imageWebpUrl"  srcset="{{pData.imageWebpUrl}}, {{pData.imagePngUrl}}" alt="">
     </div>
 </div>

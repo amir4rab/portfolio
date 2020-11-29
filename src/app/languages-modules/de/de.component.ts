@@ -14,7 +14,8 @@ export class DeComponent implements OnInit {
       title: 'news app',
       aboutShort: 'Eine einfache Nachrichten-App, mit der Sie Daten von der API abrufen und Ihre Einstellungen speichern können.',
       aboutFull: 'Eine einfache Nachrichten-App, mit der Sie Daten von der API abrufen und Ihre Einstellungen speichern können.',
-      imageUrl: './../../assets/screens/news-app.png',
+      imagePngUrl: './../../assets/screens/news-app.png',
+      imageWebpUrl: './../../assets/screens/news-app.webp',
       githubLink: 'https://github.com/amir4rab/newsAppPro',
       liveDemoLink: 'https://news.amir4rab.com/',
       technologies: [
@@ -29,6 +30,29 @@ export class DeComponent implements OnInit {
         {
           name: 'firebase',
           imageUrl: './../../assets/logos/compressed/firebaseLogoWhite.svg'
+        }
+      ]
+    },
+    {
+      title: 'Crypto',
+      aboutShort: 'a simple Crypto app that shows the latest cryptocurrencies prices.',
+      aboutFull: 'a simple Crypto app that shows the latest cryptocurrencies prices.',
+      imagePngUrl: './../../assets/screens/crypto-app.png',
+      imageWebpUrl: './../../assets/screens/crypto-app.webp',
+      githubLink: 'https://github.com/amir4rab/newsAppPro',
+      liveDemoLink: 'https://crypto.amir4rab.com/',
+      technologies: [
+        {
+          name: 'angular',
+          imageUrl: './../../assets/logos/compressed/angularLogoWhite.svg'
+        },
+        {
+          name: 'typescript',
+          imageUrl: './../../assets/logos/compressed/tsLogoWhite.svg'
+        },
+        {
+          name: 'chart.js',
+          imageUrl: './../../assets/logos/compressed/chartJsLogoWhite.svg'
         }
       ]
     },

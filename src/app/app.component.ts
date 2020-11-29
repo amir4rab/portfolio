@@ -9,11 +9,9 @@ import { GlobalDataService } from './global-data/global-data.service';
 export class AppComponent {
   title = 'portfolio';
   target: HTMLElement = null;
-  constructor ( private globalD: GlobalDataService  ) {
+  constructor ( ) {
     // this.doStuff(this.ob);
   }
-
-  pArr = this.globalD.projectsArr;
 
   // options = {
   //   rootMargin: '0px',

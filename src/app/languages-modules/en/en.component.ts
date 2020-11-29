@@ -15,7 +15,8 @@ export class EnComponent implements OnInit {
       title: 'news app',
       aboutShort: 'a simple news app that fetch data from api and let you save your preferences.',
       aboutFull: 'a simple news app that fetch data from api and let you save your preferences.',
-      imageUrl: './../../assets/screens/news-app.png',
+      imagePngUrl: './../../assets/screens/news-app.png',
+      imageWebpUrl: './../../assets/screens/news-app.webp',
       githubLink: 'https://github.com/amir4rab/newsAppPro',
       liveDemoLink: 'https://news.amir4rab.com/',
       technologies: [
@@ -32,7 +33,30 @@ export class EnComponent implements OnInit {
           imageUrl: './../../assets/logos/compressed/firebaseLogoWhite.svg'
         }
       ]
-    }
+    },
+    {
+      title: 'Crypto',
+      aboutShort: 'a simple Crypto app that shows the latest cryptocurrencies prices.',
+      aboutFull: 'a simple Crypto app that shows the latest cryptocurrencies prices.',
+      imagePngUrl: './../../assets/screens/crypto-app.png',
+      imageWebpUrl: './../../assets/screens/crypto-app.webp',
+      githubLink: 'https://github.com/amir4rab/newsAppPro',
+      liveDemoLink: 'https://crypto.amir4rab.com/',
+      technologies: [
+        {
+          name: 'angular',
+          imageUrl: './../../assets/logos/compressed/angularLogoWhite.svg'
+        },
+        {
+          name: 'typescript',
+          imageUrl: './../../assets/logos/compressed/tsLogoWhite.svg'
+        },
+        {
+          name: 'chart.js',
+          imageUrl: './../../assets/logos/compressed/chartJsLogoWhite.svg'
+        }
+      ]
+    },
   ]
   langData: LangData = {
     'home' : {
